@@ -48,16 +48,16 @@ html {
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: -180px;
+  margin-top: -130px;
   position: absolute;
 }
 
 .button {
   border: none;
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -67,8 +67,7 @@ html {
 }
 
 .button:hover {
-   transform: scale(0.94);
-    
+   transform: scale(0.91);
 }
 
 a {
@@ -92,6 +91,10 @@ a {
   margin-top:-150px;
 }
 
+.button_container {
+  margin-top: -50px; 
+}
+
 }
 
 
@@ -110,7 +113,11 @@ a {
   }
 
 .img-comp-slider {
-  margin-top:-100px;
+  margin-top:-10px;
+}
+
+.button_container {
+  margin-top: -60px; 
 }
 
 }
@@ -130,7 +137,11 @@ a {
   }
 
 .img-comp-slider {
-  margin-top:-70px;
+  margin-top:0px;
+}
+
+.button_container {
+  margin-top: -70px; 
 }
 
 }
@@ -153,6 +164,10 @@ a {
   margin-top: 0px;
 }
 
+.button_container {
+  margin-top: -80px; 
+}
+
 }
 
 
@@ -173,6 +188,10 @@ a {
   margin-top: 20px;
 }
 
+.button_container {
+  margin-top: -90px; 
+}
+
 }
 
 @media screen and (min-width: 1440px){
@@ -187,6 +206,10 @@ a {
     margin: 0 auto;
   
   }
+
+.button_container {
+  margin-top: -120px; 
+}
 
 }
 
