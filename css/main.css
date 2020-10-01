@@ -1,22 +1,22 @@
 
-
-html {
+* {
   scroll-behavior: smooth;
   font-family: 'Heebo', sans-serif;
 }
 
-
+h1, h2, h3, p {
+  color: black;
+}
 
 /* -----------Navigation -------------- */
 .justify-content-center {
-   -ms-flex-pack: center!important;
-   justify-content: center!important;
+   justify-content: center;
+   -ms-flex-align: center;
    width: 100%;
-   height: 5vh;
    z-index: 1000;
    position: fixed;
    margin-top: -8px;
-    padding-top: 5px;
+   padding-top: 5px;
 }
 
 /* Style the active class, and buttons on mouse-over */
@@ -199,7 +199,7 @@ padding-top: 10px;
   font-weight: 900;
   text-align: center;
   z-index: 1;
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 /*
@@ -221,26 +221,58 @@ padding-top: 10px;
 
 .project_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 20px;
   padding-top: 50px;
   
 }
 
 .project1, .project2, .project3, .project4, .project5, .project6 {
-  width: 350px;
-  height: 300px;
-  background-color: #F2F2F4;
   display: block;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
 
+.img__description {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  font-size:50px;
+  font-weight: 900;
+  padding:20px;
+  margin-top:0px;
+ 
+}
+
+.button2 {
+  border: none;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color:#99BFCD;
+    position: absolute;
+    color: white;
+    top:45%;
+    left:3%;
+}
+
+.button2:hover {
+   transform: scale(0.91);
+}
+
 
 .project1 {
-  
+  grid-area: 1/1/2/2;
+  position: relative;
 }
 
 .project2 {
@@ -255,13 +287,44 @@ padding-top: 10px;
 
 }
 
-.project5 {
 
+
+
+/*open vindue projekter*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 }
 
-.project6 {
-
+.modal2 {
+    display: none;
 }
+
+.modal-content {
+    margin: 30% auto;
+    width: 90%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    animation-name: modalopen;
+    animation-duration: 1s;
+    background-color: white;
+}
+
+.header {
+    background-color: #009245;
+    opacity: 70%;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+}
+
+
+
 
 
 
@@ -335,6 +398,20 @@ padding-top: 10px;
   margin-top: -70px; 
 }
 
+/*my projects*/
+.img__description {
+  font-size:22px;
+ 
+}
+
+.button2 {
+    padding: 6px;
+    left:5%;
+     font-size: 13px;
+      font-weight: bolder;
+    
+}
+
 }
 
 
@@ -358,6 +435,21 @@ padding-top: 10px;
 .button_container {
   margin-top: -80px; 
 }
+
+
+/*my projects*/
+.img__description {
+  font-size:33px;
+ 
+}
+
+.button2 {
+    padding: 10px;
+    left:4%;
+    font-size: 15px;
+     font-weight: bolder;
+}
+
 
 }
 
@@ -383,6 +475,18 @@ padding-top: 10px;
   margin-top: -90px; 
 }
 
+/*my projects*/
+.img__description {
+  font-size:40px;
+ 
+}
+
+.button2 {
+    padding: 15px;
+    left:3%;
+     font-weight: bolder;
+}
+
 }
 
 @media screen and (min-width: 1440px){
@@ -400,6 +504,18 @@ padding-top: 10px;
 
 .button_container {
   margin-top: -120px; 
+}
+
+/*my projects*/
+.img__description {
+  font-size:50px;
+  font-weight: bolder;
+}
+
+.button2 {
+    left:3%;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 }
