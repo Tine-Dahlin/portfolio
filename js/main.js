@@ -2,23 +2,26 @@
 
 /*-------------------- active i navbar ---------------------*/
 
-// Get the container element
-var btnContainer = document.getElementById("nav1");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("btn");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active2");
-        current[0].className = current[0].className.replace(" active2", "");
-        this.className += " active2";
-    });
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
 
-
-
+/*------- usynlig menu scroll ned, synlig igen scroll op ---------*/
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+    } else {
+        document.getElementById("nav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
 /*-------------------- comparison slider ---------------------*/
 function initComparisons() {
