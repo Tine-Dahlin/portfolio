@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,11 +19,11 @@
   <!--headeren-->
   <div id="nav">
     <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active">TINE DAHLIN</a>
-      <a href="#contact" class="about">CONTACT</a>
-      <a href="#projects" class="about">PROJECTS</a>
+      <a class="active" href="index.html"><img class="active" src="img/logomig.svg" width="27%"></a>
+      <a href="#contact" onclick="myFunction()" class="about">contact</a>
+      <a href="#projects" onclick="myFunction()" class="about">projects</a>
 
-      <a href="#about" class="kontakt">ABOUT</a>
+      <a href="#about" onclick="myFunction()" class="kontakt">about</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </div>
@@ -30,27 +31,25 @@
   <br><br>
   <div class="img-comp-container">
     <div class="img-comp-img">
-      <img class="img-comp-img" src="img/frontender3.png">
+      <img class="img-comp-img" src="img/frontender5.png">
     </div>
 
 
     <div class="img-comp-img img-comp-overlay">
-      <img class="img-comp-img" src="img/designer4.png">
+      <img class="img-comp-img" src="img/designer5.png">
     </div>
   </div>
 
 
-  <div class="button_container">
-    <a href="#projects" class="button">see my work</a>
-  </div>
+
 
 
   <!--1 SECTION-->
   <div id=about>
     <div class="section1">
-      <p class="hello">hello there, im</p>
+      <h4 class="hello">hello there, im</h4>
       <h1 class="tine">tine dahlin</h1>
-      <p class="and">and</p>
+      <h4 class="and">and</h4>
       <h3 class="om"> im a all around multimedia designer who is passionate about creating,
         designing
         and coding digital
@@ -64,76 +63,89 @@
     <img class="portrat" src="img/tegningmig2.jpg" width="40%">
     <h1 class="quote">Intuitive <br> design <br> is how we <br> give
       the user <br> new <br> superpowers.</h1>
-
-
   </div>
 
-  <div class="streg"></div>
+
 
   <!--3 SECTION-->
   <div id=projects>
-    <div class="section3">
+    <div class="container_orange">
+      <h1 class="my_projects">My projects</h1>
+      <div class="orange_boks"></div>
+    </div>
+    <p class="all">Here you can check out some of my cases and work</p>
 
-      <div class="container_orange">
-        <h1 class="my_projects">my projects.</h1>
-        <div class="orange_boks"></div>
+
+
+    <!--4 SECTION-->
+    <div class="project_container">
+      <div class="container" class="container1">
+        <img src="img/project1.svg" class="image" style="width:100%">
+        <div class="middle">
+          <a href="hobbyhomies.html"><button class="button3">read more</button></div></a>
       </div>
 
 
-      <p class="all">2 of the best</p>
-
-      <div class="project_container2">
-        <div class="project3">
-          <img src="img/tusindfryd.png" width="100%">
-        </div>
-
-        <div class="project4">
-          <!-- <p class="description">Tusindfryd</p>
-          <a href="#" class="button2">read more</a> -->
-        </div>
+      <div class="container" class="container2">
+        <img src="img/project2.svg" class="image" style="width:100%">
+        <div class="middle">
+          <a href="tusindfryd.html"><button class="button3">read more</button></div></a>
       </div>
 
 
-      <div class="project_container">
+      <div class="container" class="container3">
+        <img src="img/project3.svg" class="image" style="width:100%">
+        <div class="middle">
+          <a href="some.html"><button class="button3">read more</button></div></a>
+      </div>
 
-
-        <div class="project1">
-          <img src="img/hobbyhomies.png" width="100%">
-        </div>
-
-        <div class="project2">
-          <!--<p class="img__description">Hobby Homies <br> web app</p>
-          <a href="#" class="button2">read more</a>-->
-        </div>
-
+      <div class="container" class="container4">
+        <img src="img/gustilader.svg" class="image" style="width:100%">
+        <div class="middle">
+          <a href="gusti.html"><button class="button3">read more</button></div></a>
       </div>
 
 
-
+      <div class="container" class="container5">
+        <img src="img/illustrations.svg" class="image" style="width:100%">
+        <div class="middle">
+          <a href="illustrationer.html"><button class="button3">read more</button></div></a>
+      </div>
 
     </div>
-  </div>
+
+    <br><br><br>
 
 
-  <div id="contact">
-    <h1 class="interest">Have I caught your interest?</h1>
-    <div class="container_contact">
-      <h1 class="touch">Get in <br>touch</h1>
-      <p class="email">email me- <br>
-        tinedahlin@hotmail.com <br><br>
+    <!--CONTACT-->
+    <div id="contact">
 
-        read more about me- <br>
-        download my cv <br><br>
-
-        find me-<br>
-        linkedIn.com <br><br>
-        <img src="img/facebook.png" width="5%" style="margin-right: 7px;">
-        <img src="img/instagram.png" width="5%">
+      <h1 class="touch">Get in touch</h1>
+      <p class="hesitate">Can't wait to hear from you!</p>
 
 
-      </p>
+      <div class="grid_container">
 
-      <img class="mig2" src="img/migg2.png" width="20%">
+        <a class="mail" href="mailto:tinedahlin@hotmail.com" target="_blank"><img src="img/email.svg" width="100%"></a>
+        <p class="mailtekst">email</p>
+
+        <a class="in" href="https://www.linkedin.com/in/tine-dahlin-804711176/" target="_blank"><img
+            src="img/linkedin.svg" width="100%"></a>
+        <p class="intekst">linkedin</p>
+
+        <a class="fb" href="https://www.facebook.com/tine.dahlin.1" target="_blank"><img src="img/facebook.svg"
+            width="100%"></a>
+        <p class="fbtekst">facebook</p>
+
+        <a class="insta" href="https://www.instagram.com/tinexdahlin/?hl=da" target="_blank"><img
+            src="img/instagram.svg" width="100%"></a>
+        <p class="instatekst">instagram</p>
+
+        <a class="cv" href="" target="_blank"><img src="img/cv.svg" width="100%"></a>
+        <p class="cvtekst">cv</p>
+
+      </div>
+
 
 
     </div>

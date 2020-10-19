@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="216" height="216" viewBox="0 0 216 216">
+  <g id="email" transform="translate(375 1349)">
+    <circle id="email-2" data-name="email" cx="108" cy="108" r="108" transform="translate(-375 -1349)" fill="#f7c152"/>
+    <path id="Icon_ionic-md-mail" data-name="Icon ionic-md-mail" d="M71.167,5.625H9.5A7.275,7.275,0,0,0,2.25,12.879v45.34A7.275,7.275,0,0,0,9.5,65.474H71.167a7.275,7.275,0,0,0,7.255-7.254V12.879A7.275,7.275,0,0,0,71.167,5.625ZM70.26,21.041,40.336,40.99,10.411,21.041V13.786l29.924,19.95L70.26,13.786Z" transform="translate(-308.25 -1276.625)" fill="#fff"/>
+  </g>
+</svg>
