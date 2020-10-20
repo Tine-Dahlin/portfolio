@@ -44,7 +44,6 @@ position: fixed;
 .topnav a {
   display: block;
   color: black;
-  text-align: center;
   padding: 20px 25px;
   text-decoration: none;
   font-size: 23px;
@@ -118,7 +117,9 @@ position: fixed;
     text-align: left;
   }
 
-
+.activeimg:active {
+display: none;
+}
 }
 
 
